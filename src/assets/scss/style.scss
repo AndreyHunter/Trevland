@@ -1,9 +1,9 @@
 /* VARIABLES START */
-@import './blocks/variables/_variables';
+@import './blocks/_variables/_variables';
 /* VARIABLES END */
 
 /* GLOBAL START */
-@import './blocks/global/_global';
+@import './blocks/_global/_global';
 /* GLOBAL END */
 
 /* HEADER START */
@@ -11,9 +11,12 @@
 /* HEADER END */
 
 /* MAIN START */ 
-
+@import './blocks/section-hero/hero';
+@import './blocks/section-location/location';
+@import './blocks/section-offers/offers';
+@import './blocks/section-blog/blog';
 /* MAIN END */
 
 /* FOOTER START */
-
+@import './blocks/footer/footer';
 /* FOOTER END */

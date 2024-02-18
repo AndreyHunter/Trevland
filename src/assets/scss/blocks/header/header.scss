@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-top: 35px;
+    
+    &__logo {
+        font-family: Ribeye;
+        font-size: 1.5em;
+        line-height: 150%;
+        letter-spacing: 6%;
+        color: $whiteColor;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__link {
+        padding: 7px 5px;
+        color: $whiteColor;
+        font-size: 1.125em;
+        font-weight: 500;
+        line-height: 150%;
+    }
+
+    &__button {
+        width: 163px;
+        min-height: 50px;
+    }
+}
+

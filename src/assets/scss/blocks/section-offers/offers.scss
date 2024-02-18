@@ -1,0 +1,117 @@
+.offers {
+    max-width: 1920px;
+    margin-inline: auto;
+    padding-inline: 15px;
+    padding-bottom: 140px;
+
+    &__desc {
+        margin-inline: auto;
+        max-width: 656px;
+        margin-bottom: 60px;
+    }
+
+    &__slider {
+        margin-bottom: 50px;
+    }
+
+    &__card {
+        min-height: 334px;
+    }
+
+    &__card-image {
+        display: block;
+        width: 100%;
+        min-height: 173px;
+        margin-bottom: 20px;
+    }
+
+    &__card-title {
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 150%;
+        color: $blackColor;
+        margin-bottom: 8px;
+    }
+
+    &__card-country {
+        display: flex;
+        column-gap: 84px;
+        padding-left: 20.88px;
+        font-size: 1.25em;
+        line-height: 150%;
+        color: $blackColor;
+        margin-bottom: 8px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 10.86px;
+            height: 15.2px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: url(../images/icons/map.svg) center no-repeat; 
+        } 
+    }
+
+    &__card-grade {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 48%;
+            left: -20px;
+            transform: translate(-50%, -50%);
+            width: 24px;
+            height: 24px;
+            background: url(../images/icons/star.svg) center no-repeat; 
+        }
+    }
+
+    &__card-days {
+        display: block;
+        font-size: 1em;
+        line-height: 150%;
+        color: $blackColor;
+        opacity: 0.6;
+        margin-bottom: 8px;
+    }
+}
+
+.offers__slider-controlls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.swiper-button-prev,
+.swiper-button-next {
+    position: static;
+    height: 20px;
+    width: 20px;
+    background: url(../images/icons/arrows.svg) center no-repeat;
+    background-size: 100%;
+    transform: translateY(12px);
+
+    &::after {
+        display: none;
+    }
+}
+
+.swiper-button-next {
+    transform: translateY(12px) rotate(180deg);
+}
+
+.swiper-pagination {
+    max-width: 300px;
+    position: static;
+}
+
+.swiper-pagination-bullet {
+    width: 75px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #C9453B;
+}

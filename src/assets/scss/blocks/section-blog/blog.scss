@@ -1,0 +1,53 @@
+.blog {
+    padding-bottom: 140px;
+
+    &__desc {
+        margin-inline: auto;
+        max-width: 600px;
+        margin-bottom: 56px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__main {
+        width: 49%;
+    }
+
+    &__image-big {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    &__card-title {
+        font-size: 1.25em;
+        font-weight: 600;
+        line-height: 150%;
+        margin-bottom: 10px;
+    }
+
+    &__card-desc {
+        font-size: 1.125em;
+        line-height: 160%;
+        opacity: 0.6;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        font-size: 1.125em;
+        color: $blackColor;
+        font-weight: 500;
+    }
+
+    &__list {
+        width: 49%;
+    }
+
+    &__card {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,98 @@
+.footer {
+    padding-top: 70px;
+    min-height: 348px;
+    background-color: #2694990A;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: block;
+        font-family: Ribeye;
+        font-weight: 600;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        color: $blackColor;
+        margin-bottom: 40px;
+    }
+
+    &__contacts-desc {
+        font-size: 1em;
+        line-height: 160%;
+        margin-bottom: 10px;
+    }
+
+    &__contacts-gmail {
+        display: block;
+        font-size: 1em;
+        line-height: 160%;
+        color: $blackColor;
+        margin-bottom: 20px;
+    }
+
+    &__sosial-media {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__links:not(:last-child) {
+        margin-right: 123px;
+    }
+
+    &__link {
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 150%;
+        color: $blackColor;
+    }
+
+    &__link:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.subscribe-form {
+    &__title {
+        font-size: 1.25em;
+        margin-bottom: 42px;
+    }
+
+    &__body {
+        display: flex;
+        gap: 35px;
+    }
+
+    &__input {
+        width: 195px;
+        min-height: 44px;
+        padding-left: 20px;
+
+        &::placeholder {
+            font-weight: 500;
+            line-height: 150%;
+            color: $blackColor;
+        }
+    }
+
+    &__button {
+        width: 103px;
+        min-height: 44px;
+        border-radius: 5px;
+        background: rgb(201, 69, 59);
+        outline: none;
+        border: none;
+        color: $whiteColor;
+        cursor: pointer;
+    }
+}
