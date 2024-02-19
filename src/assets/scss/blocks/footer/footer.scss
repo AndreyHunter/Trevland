@@ -37,6 +37,15 @@
         gap: 20px;
     }
 
+    &__sosial-media-link {
+        svg {
+            transition: .15s ease-in-out;
+            &:hover {
+                transform: scale(.95);
+            }
+        }
+    }
+
     &__nav {
         display: flex;
     }
@@ -55,6 +64,11 @@
         font-weight: 500;
         line-height: 150%;
         color: $blackColor;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            color: #C9453B;
+        }
     }
 
     &__link:not(:last-child) {

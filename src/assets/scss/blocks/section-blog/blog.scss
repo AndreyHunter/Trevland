@@ -19,6 +19,22 @@
     &__image-big {
         display: block;
         margin-bottom: 35px;
+        cursor: pointer;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            filter: saturate(140%);
+        }
+    }
+
+    &__image-sm {
+        display: block; 
+        cursor: pointer;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            filter: saturate(140%);
+        }
     }
 
     &__card-title {

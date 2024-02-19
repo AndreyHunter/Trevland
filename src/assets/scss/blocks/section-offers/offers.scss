@@ -23,6 +23,12 @@
         width: 100%;
         min-height: 173px;
         margin-bottom: 20px;
+        transition: .2s ease-in-out;
+
+        &:hover {
+            filter: saturate(140%);
+        }
+
     }
 
     &__card-title {
@@ -115,3 +121,5 @@
     border-radius: 10px;
     background-color: #C9453B;
 }
+
+

@@ -3,12 +3,13 @@
     position: fixed;
     top: 0;
     padding-top: 35px;
+    z-index: 10;
+    transition: .3s ease-out;
     
     &__logo {
         font-family: Ribeye;
         font-size: 1.5em;
         line-height: 150%;
-        letter-spacing: 6%;
         color: $whiteColor;
     }
 
@@ -37,3 +38,6 @@
     }
 }
 
+.hvr-underline-from-left::before {
+    background: #C9453B;
+}

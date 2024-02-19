@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    slidesPerView: 6,
+    slidesPerView: 5,
     spaceBetween: 50,
     speed: 400,
     allowTouchMove: true,
