@@ -122,4 +122,17 @@
     background-color: #C9453B;
 }
 
+@media (max-width: 1024px) {
+    .offers {
+        padding-bottom: 100px;
+    }
 
+    .swiper-pagination {
+        max-width: 200px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+    }
+}

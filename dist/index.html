@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="home">
 
     <header class="header">
         <div class="container">
@@ -22,25 +22,39 @@
     
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#!" class="header__link hvr-underline-from-left">Home</a>
+                        <a href="#home" class="header__link hvr-underline-from-left">Home</a>
                     </li>
                     <li class="header__item">
-                        <a href="#!" class="header__link hvr-underline-from-left">Location</a>
+                        <a href="#location" class="header__link hvr-underline-from-left">Location</a>
                     </li>
                     <li class="header__item">
-                        <a href="#!" class="header__link hvr-underline-from-left">Blog</a>
+                        <a href="#blog" class="header__link hvr-underline-from-left">Blog</a>
                     </li>
                     <li class="header__item">
                         <a href="#!" class="header__link hvr-underline-from-left">About</a>
                     </li>
                     <li class="header__item">
-                        <a href="#!" class="header__link hvr-underline-from-left">Contact</a>
+                        <a href="#contacts" class="header__link hvr-underline-from-left">Contact</a>
                     </li>
                 </ul>
-                
     
+                <div id="nav-icon1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
                 <a href="#!" class="header__button btn">Booking now</a>
             </nav>
+    
+            <nav class="mobaile__nav">
+                <a href="#home" class="mobaile__link">Home</a>
+                <a href="#location" class="mobaile__link">Location</a>
+                <a href="#blog" class="mobaile__link">Blog</a>
+                <a href="#!" class="mobaile__link">About</a>
+                <a href="#contacts" class="mobaile__link">Contact</a>
+            </nav>
+    
         </div>
     </header>
 
@@ -60,7 +74,7 @@
             </div>
         </section>
     
-        <section class="location">
+        <section id="location" class="location">
             <div class="container">
                 <h2 class="section-title text-center">
                     Popular Location
@@ -71,7 +85,7 @@
     
                 <ul class="location__list">
                     <li class="location__card">
-                        <a href="https://en.wikipedia.org/wiki/Istanbul" target="_blank" class="location__card-link">
+                        <a href="#!" class="location__card-link">
                             <img src="https://gagaru.club/uploads/posts/2023-02/1676412395_gagaru-club-p-krasivii-stambul-krasivo-39.jpg" alt="Istanbul, Turkey" class="location__image">
                         </a>
                        <div class="location__card-body">
@@ -84,7 +98,7 @@
                        </div>
                     </li>
                     <li class="location__card">
-                        <a href="https://en.wikipedia.org/wiki/Kuala_Lumpur" target="_blank" class="location__card-link">
+                        <a href="#!" class="location__card-link">
                             <img src="https://images.unsplash.com/photo-1583316484710-c0f76f4e13a8?q=80&w=2018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kuala Lumpur, malaysia" class="location__image">
                         </a>
                         <div class="location__card-body">
@@ -97,7 +111,7 @@
                         </div>
                     </li>
                     <li class="location__card">
-                        <a href="https://en.wikipedia.org/wiki/Seoul" target="_blank" class="location__card-link">
+                        <a href="#!" class="location__card-link">
                             <img src="https://worldstrides.com/wp-content/uploads/2015/07/MAP_Korea_gyeonbokgung-palace-seoul_18759736.jpg" alt="Seoul, South Korea" class="location__image">
                         </a>
                         <div class="location__card-body">
@@ -188,6 +202,46 @@
                         <span class="offers__card-days">4 Day 5 Nights</span>
                         <span class="offers__card-count"><strong>$700/</strong>person</span>
                       </div>
+                      
+                      <div class="offers__card swiper-slide">
+                        <a href="#!" class="offers__card-link">
+                            <img src="./assets/images/offers-icons/Discover-sajek-valley 3.png" alt="" class="offers__card-image">
+                        </a>
+                        <h3 class="offers__card-title">
+                            Osaka Castle
+                        </h3>
+                        <div class="offers__card-country">Japan
+                            <span class="offers__card-grade">4.8</span>
+                        </div>
+                        <span class="offers__card-days">4 Day 5 Nights</span>
+                        <span class="offers__card-count"><strong>$700/</strong>person</span>
+                      </div>
+                      <div class="offers__card swiper-slide">
+                        <a href="#!" class="offers__card-link">
+                            <img src="./assets/images/offers-icons/Discover-sajek-valley 3.png" alt="" class="offers__card-image">
+                        </a>
+                        <h3 class="offers__card-title">
+                            Osaka Castle
+                        </h3>
+                        <div class="offers__card-country">Japan
+                            <span class="offers__card-grade">4.8</span>
+                        </div>
+                        <span class="offers__card-days">4 Day 5 Nights</span>
+                        <span class="offers__card-count"><strong>$700/</strong>person</span>
+                      </div>
+                      <div class="offers__card swiper-slide">
+                        <a href="#!" class="offers__card-link">
+                            <img src="./assets/images/offers-icons/Discover-sajek-valley 3.png" alt="" class="offers__card-image">
+                        </a>
+                        <h3 class="offers__card-title">
+                            Osaka Castle
+                        </h3>
+                        <div class="offers__card-country">Japan
+                            <span class="offers__card-grade">4.8</span>
+                        </div>
+                        <span class="offers__card-days">4 Day 5 Nights</span>
+                        <span class="offers__card-count"><strong>$700/</strong>person</span>
+                      </div>
                 </div>
             </div>
             
@@ -198,7 +252,7 @@
             </div>
         </section>
     
-        <section class="blog">
+        <section id="blog" class="blog">
             <div class="container">
                 <h2 class="section-title text-center">
                     From Blog & News
@@ -268,14 +322,27 @@
                 </div>
             </div>
         </section>
+    
     </main>
     
 
-    <footer class="footer">
+    <a href="#home" class="topButton">
+        <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    
+            <g fill="none" fill-rule="evenodd">
+            
+            <path d="m0 0h32v32h-32z"/>
+            
+            <path id="top" d="m16 0c8.836556 0 16 7.163444 16 16s-7.163444 16-16 16-16-7.163444-16-16 7.163444-16 16-16zm0 2c-7.7319865 0-14 6.2680135-14 14s6.2680135 14 14 14 14-6.2680135 14-14-6.2680135-14-14-14zm.0790314 9.1650801c.2359046.0138648.4678334.1109182.6480754.2911601l5.6568542 5.6568543c.3905243.3905243.3905243 1.0236893 0 1.4142135-.3905243.3905243-1.0236892.3905243-1.4142135 0l-4.9708933-4.9712279-4.9717474 4.9712279c-.3905243.3905243-1.0236893.3905243-1.41421358 0-.39052429-.3905242-.39052429-1.0236892 0-1.4142135l5.65685428-5.6568543c.1802419-.1802419.4121707-.2772953.6480754-.2911601z" fill="#C9453B" fill-rule="nonzero"/>
+            </g>
+        </svg>
+    </a>
+    
+    <footer id="contacts" class="footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__contacts">
-                    <a href="#!" class="footer__logo">Trevland</a>
+                    <a href="" class="footer__logo hvr-grow">Trevland</a>
                     <p class="footer__contacts-desc">Contact us</p>
                     <a href="#!" class="footer__contacts-gmail">@shovasatkhira88.com</a>
                     <div class="footer__sosial-media">
@@ -414,13 +481,13 @@
                     </div>
                 </nav>
     
-                <form action="#!" class="subscribe-form">
+                <form action="#!" class="subscribe-form" novalidate>
                     <h3 class="subscribe-form__title">
                         SUBSCRIBE NOW
                     </h3>
                     <div class="subscribe-form__body">
                         <div class="subscribe-form__input-wrapper">
-                            <input type="email" class="subscribe-form__input" placeholder="Email" required>
+                            <input id="emailInput" type="email" class="subscribe-form__input" placeholder="Email">
                         </div>
                         <button type="submit" class="subscribe-form__button">Send</button>
                     </div>

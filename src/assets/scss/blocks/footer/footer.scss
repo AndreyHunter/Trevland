@@ -1,5 +1,5 @@
 .footer {
-    padding-top: 70px;
+    padding: 70px 0;
     min-height: 348px;
     background-color: #2694990A;
 
@@ -41,7 +41,7 @@
         svg {
             transition: .15s ease-in-out;
             &:hover {
-                transform: scale(.95);
+                transform: scale(.90);
             }
         }
     }
@@ -84,13 +84,21 @@
 
     &__body {
         display: flex;
+        flex-wrap: wrap;
         gap: 35px;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
     &__input {
         width: 195px;
         min-height: 44px;
         padding-left: 20px;
+        outline: none;
 
         &::placeholder {
             font-weight: 500;
@@ -101,12 +109,74 @@
 
     &__button {
         width: 103px;
-        min-height: 44px;
+        height: 44px;
         border-radius: 5px;
         background: rgb(201, 69, 59);
         outline: none;
         border: none;
         color: $whiteColor;
         cursor: pointer;
+        transition: .1s ease-in-out;
+
+        &:hover {
+            background-color: rgb(165, 51, 43);
+        }
+
+        &:active {
+            transform: translateY(.8px);
+        }
+    }
+}
+
+@media (max-width: 968px) {
+    .footer__content {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .subscribe-form__input-wrapper {
+        width: 100%;
+    }
+
+    .subscribe-form__input {
+        width: inherit;
+    }
+    
+    .subscribe-form__button {
+        width: 100%;
+    }  
+}
+
+@media (max-width: 600px) {
+    .footer__content {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer__contacts {
+        order: -2;
+    }
+
+    .subscribe-form  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: -1;
+    }
+}
+
+@media (max-width: 504px) {
+    .footer__content {
+        justify-content: center;
+    }
+
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__links:not(:last-child) {
+        margin-right: 50px;
     }
 }

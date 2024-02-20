@@ -39,5 +39,105 @@
 }
 
 .hvr-underline-from-left::before {
-    background: #C9453B;
+    background: $btn-color;
+}
+
+/* MOBAILE-MENU START */
+
+.mobaile__nav {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    inset: 0;
+    padding: 70px;
+    background-color: rgba(0, 0, 0, 0.858);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.mobaile__link {
+    color: $whiteColor;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.mobaile__nav.active {
+    animation: mobaile .2s ease-in-out;
+    visibility: visible;
+}
+
+/* MOBAILE-MENU-BTN START */
+#nav-icon1 {
+    display: none;
+    width: 50px;
+    height: 45px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+#nav-icon1 span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: $whiteColor;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+#nav-icon1 span:nth-child(1) {
+    top: 0px;
+}
+#nav-icon1 span:nth-child(2) {
+    top: 18px;
+}
+#nav-icon1 span:nth-child(3) {
+    top: 36px;
+}
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+}
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+}
+/* MOBAILE-MENU-BTN END */
+
+/* MOBAILE-MENU END */
+
+@keyframes mobaile {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 968px) {
+
+    .header__list {
+        display: none;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    #nav-icon1 {
+        display: block;
+    }
 }

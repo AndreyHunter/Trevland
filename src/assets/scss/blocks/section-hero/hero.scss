@@ -1,6 +1,7 @@
 .hero {
     width: 100%;
     min-height: 100vh;
+    position: relative;
     
     &::before {
         content: '';
@@ -33,5 +34,62 @@
         max-width: 458px;
         color: $whiteColor;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .hero__content {
+        padding-top: 250px;
+    }
+
+    .hero__title {
+        font-size: 3.7em;
+    }
+}
+
+@media (max-width: 968px) {
+    .hero__content {
+        width: 80%;
+        padding-top: 200px;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero__title {
+        font-size: 3em;
+    }
+
+    .hero__desc {
+        font-size: 1em;
+    }
+
+    .hero__button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero__content {
+        width: 100%;
+        padding-top: 180px;
+    }
+
+    .hero__title {
+        font-size: 2.6em;
+    }
+
+    .hero__button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero__title {
+        font-size: 2.4em;
     }
 }
