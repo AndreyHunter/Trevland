@@ -13,7 +13,20 @@
     }
 
     &__main {
+        visibility: hidden;
         width: 49%;
+    }
+
+    &__list {
+        visibility: hidden;
+    }
+
+    &__main.visibility {
+        visibility: visible;
+    }
+    
+    &__list.visibility {
+        visibility: visible;
     }
 
     &__image-big {
@@ -131,3 +144,4 @@
         min-height: 220px;
     }
 }
+

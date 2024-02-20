@@ -182,8 +182,8 @@ img {
     height: 100%;
     position: fixed;
     inset: 0;
-    padding: 70px;
-    background-color: rgba(0, 0, 0, 0.858);
+    padding: 120px;
+    background-color: rgba(0, 0, 0, 0.95);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,6 +194,10 @@ img {
     color: #fff;
     font-size: 2.5rem;
     font-weight: 600;
+}
+
+.mobaile__link:hover {
+    color: #C9453B;
 }
 
 .mobaile__nav.active {
@@ -311,6 +315,7 @@ img {
     line-height: 120%;
     color: #fff;
     margin-bottom: 30px;
+    animation: bounceInDown 1.5s ease-in-out;
 }
 
 .hero__desc {
@@ -392,18 +397,23 @@ img {
 }
 
 .location__card {
+    opacity: 0;
     width: 32%;
     min-height: 500px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
     cursor: pointer;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in-out;
+    animation-duration: 1.1s;
 }
 
 .location__card:hover {
-    transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.location__card.visibility {
+    opacity: 1;
 }
 
 .location__image {
@@ -506,6 +516,7 @@ img {
     display: block;
     width: 100%;
     min-height: 173px;
+    border-radius: 10px;
     margin-bottom: 20px;
     transition: 0.2s ease-in-out;
 }
@@ -637,7 +648,20 @@ img {
 }
 
 .blog__main {
+    visibility: hidden;
     width: 49%;
+}
+
+.blog__list {
+    visibility: hidden;
+}
+
+.blog__main.visibility {
+    visibility: visible;
+}
+
+.blog__list.visibility {
+    visibility: visible;
 }
 
 .blog__image-big {
@@ -899,7 +923,7 @@ img {
     }
 
     .subscribe-form__input {
-        width: inherit;
+        width: 100%;
     }
 
     .subscribe-form__button {
