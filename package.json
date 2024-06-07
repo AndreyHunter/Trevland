@@ -1,12 +1,16 @@
 {
-    "name": "gulp-site",
+    "name": "travland",
     "version": "1.0.0",
     "description": "",
     "author": "Hunter",
+    "scripts": {
+        "deploy": "gh-pages -d dist"
+    },
     "devDependencies": {
         "browser-sync": "^2.29.3",
         "del": "^6.0.0",
         "eslint": "^8.56.0",
+        "gh-pages": "^6.1.1",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^8.0.0",
         "gulp-cssbeautify": "^3.0.1",
